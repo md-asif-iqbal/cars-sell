@@ -6,6 +6,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+.Apps{
+  background-image: url('../src/image/pexels-photo-4157112.jpeg');
+  background-position: center;
+
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
