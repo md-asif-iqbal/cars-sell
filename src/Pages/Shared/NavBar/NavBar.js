@@ -1,21 +1,22 @@
 import React from "react";
 import "./NavBar.css";
 import logo from "../../../image/shopify.png";
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const mobileLink = (
     <>
-      <a
-        href="/about"
+      <Link
+        to="/home"
         className="block h-16 leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
       >
         Home
-      </a>
-      <a
-        href="/about"
+      </Link>
+      <Link
+        to="/product"
         className="block h-16 leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
       >
-        About
-      </a>
+        Product
+      </Link>
 
       <a
         href="/news"
@@ -107,16 +108,14 @@ const NavBar = () => {
                   <div className="items-center space-y-4 mt-4">
                     <a
                       className="px-7 py-2 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg"
-                      href=""
-                    >
+                      href="">
                       Log in
                     </a>
                   </div>
                   <div className="items-center space-y-4 mt-4">
                     <a
                       className="px-5 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg"
-                      href=""
-                    >
+                      href="">
                       Sign up
                     </a>
                   </div>
