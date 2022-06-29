@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-import logo from "../../../image/shopify.png";
+import logo from "../../../image/mama.png";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   const mobileLink = (
@@ -15,21 +15,14 @@ const NavBar = () => {
         to="/product"
         className="block h-16 leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
       >
-        Product
+        Products
       </Link>
-
-      <a
-        href="/news"
-        className="block h-16 leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
-      >
-        News
-      </a>
 
       <a
         href="/products"
         className="block h-16 leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
       >
-        Products
+        About Us
       </a>
 
       <a
@@ -71,8 +64,8 @@ const NavBar = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <img className="lg:ml-5" src={logo} alt="" />
-            <h1 className="font-bold text-3xl">SPOFY</h1>
+            <img className="lg:ml-5 w-28" src={logo} alt="" />
+            <h1 className="font-bold text-2xl">Mama Bhagina Car LTD</h1>
           </div>
           {/* dropdown here on small device */}
           <div className="flex justify-end flex-1 w-0 lg:hidden">
@@ -106,11 +99,11 @@ const NavBar = () => {
                 <div className="">
                 <label htmlFor="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                   <div className="items-center space-y-4 mt-4">
-                    <a
+                    <Link
                       className="px-7 py-2 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg"
-                      href="">
+                      to="/login">
                       Log in
-                    </a>
+                    </Link>
                   </div>
                   <div className="items-center space-y-4 mt-4">
                     <a
@@ -129,12 +122,12 @@ const NavBar = () => {
           </nav>
 
           <div className="items-center hidden space-x-4 lg:flex">
-            <a
+            <Link
               className="px-5 py-2 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg"
-              href=""
+              to="/login"
             >
               Log in
-            </a>
+            </Link>
             <a
               className="px-5 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg"
               href=""
@@ -156,22 +149,16 @@ const NavBar = () => {
               href="/about"
               className="block mx-2  h-16 leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
             >
-              About
+              Products
             </a>
 
             <a
               href="/news"
               className="block h-16 mx-2  leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
             >
-              News
+              About Us
             </a>
 
-            <a
-              href="/products"
-              className="block h-16  mx-2  leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
-            >
-              Products
-            </a>
 
             <a
               href="/contact"
